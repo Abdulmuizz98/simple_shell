@@ -14,7 +14,12 @@ int main(int ac, char **av)
 	char *line, *nline;
 	pid_t child_pid;
 	int i;
-
+	
+	if (ac != 1)
+	{
+		perror("Error");
+		return (1);
+	}
 	for (i = 0; ; i++)
 	{
 		putprompt();
