@@ -6,9 +6,11 @@
  */
 int putprompt(void)
 {
-	char *prompt = "($) ";
-
-	return (write(STDOUT_FILENO, prompt, 4));
+	char *prompt = "$ ";
+	if (isatty(STDIN_FILENO))
+		return (write(STDOUT_FILENO, prompt, 4));
+	else
+		return (-1);
 }
 
 /**
