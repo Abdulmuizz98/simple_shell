@@ -2,11 +2,15 @@
 
 We just having a nice time messing around creating our own shell whilst learning more about the shell.
 
-Compilation
+## Compilation
+
 Your shell will be compiled this way:
 
+```shell
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
-Testing
+```
+
+## Testing
 Your shell should work like this in interactive mode:
 
 $ ./hsh
